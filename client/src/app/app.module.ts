@@ -1,46 +1,91 @@
-/**
- * Copyright 2019 IBM Corp. All Rights Reserved.
- *
- * Licensed under the Apache License, Version 2.0 (the 'License'); you may not
- * use this file except in compliance with the License. You may obtain a copy of
- * the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an 'AS IS' BASIS, WITHOUT
- * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
- * License for the specific language governing permissions and limitations under
- * the License.
- */
-
-
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { UIShellModule, ButtonModule, StructuredListModule } from 'carbon-components-angular';
 
-
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UiShellComponent } from './ui-shell/ui-shell.component';
-import { DisplayFormComponent } from './display-form/display-form.component';
-import { HeaderComponent } from './header/header.component';
-import { TableListComponent } from './table-list/table-list.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PatientDashboardComponent } from './patient-dashboard/patient-dashboard.component';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+import { ChartsModule } from 'ng2-charts';
+import { BarGraphComponent } from './bar-graph/bar-graph.component';
+import { DonutChartComponent } from './donut-chart/donut-chart.component';
+import { RadarChartComponent } from './radar-chart/radar-chart.component';
+import { PieChartComponent } from './pie-chart/pie-chart.component';
+import { LineChartComponent } from './line-chart/line-chart.component';
+import { LoginRegistrationComponent } from './login-registration/login-registration.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { LoginComponent } from './login/login.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatRippleModule } from '@angular/material/core';
+import { ReactiveFormsModule } from '@angular/forms';
+import { RegisterPatientComponent } from './register-patient/register-patient.component';
+import { MatTabsModule } from '@angular/material/tabs';
+import { PatientDashboardDataComponent } from './patient-dashboard-data/patient-dashboard-data.component';
+import { PatientPhysicalHealthComponent } from './patient-physical-health/patient-physical-health.component';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatSelectModule } from '@angular/material/select';
+import { DoctorDashboardComponent } from './doctor-dashboard/doctor-dashboard.component';
+import { AssignedPatientListComponent } from './assigned-patient-list/assigned-patient-list.component';
+import { UnassignedPatientListComponent } from './unassigned-patient-list/unassigned-patient-list.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { HttpClientModule } from '@angular/common/http';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 @NgModule({
   declarations: [
     AppComponent,
-    UiShellComponent,
-    DisplayFormComponent,
-    HeaderComponent,
-    TableListComponent,
+    PatientDashboardComponent,
+    BarGraphComponent,
+    DonutChartComponent,
+    RadarChartComponent,
+    PieChartComponent,
+    LineChartComponent,
+    LoginRegistrationComponent,
+    NavbarComponent,
+    LoginComponent,
+    RegisterPatientComponent,
+    PatientDashboardDataComponent,
+    PatientPhysicalHealthComponent,
+    DoctorDashboardComponent,
+    AssignedPatientListComponent,
+    UnassignedPatientListComponent
   ],
   imports: [
     BrowserModule,
-    UIShellModule,
-    ButtonModule,
-    StructuredListModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatGridListModule,
+    MatCardModule,
+    MatMenuModule,
+    MatIconModule,
+    MatButtonModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatListModule,
+    ChartsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatRippleModule,
+    ReactiveFormsModule,
+    MatTabsModule,
+    MatCheckboxModule,
+    MatSelectModule,
+    MatTableModule,
+    MatPaginatorModule,
+    HttpClientModule,
+    MatSnackBarModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
