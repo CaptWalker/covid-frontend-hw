@@ -398,7 +398,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<mat-card class=\"mat-elevation-z4\">\r\n    <h1 style=\"text-align: center; padding-bottom: 5vh;\">Login</h1>\r\n    <form [formGroup]=\"loginForm\" [style.fontSize.px]=\"14\">\r\n        <mat-form-field appearance=\"outline\">\r\n            <mat-label>Email</mat-label>\r\n            <input matInput placeholder=\"xyz@abc.com\" formControlName=\"email\">\r\n        </mat-form-field>\r\n        <mat-form-field appearance=\"outline\">\r\n            <mat-label>Password</mat-label>\r\n            <input matInput [type]=\"hide ? 'password' : 'text'\" formControlName=\"password\">\r\n            <button mat-icon-button matSuffix (click)=\"hide = !hide\" [attr.aria-label]=\"'Hide password'\" [attr.aria-pressed]=\"hide\">\r\n            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>\r\n            </button>\r\n        </mat-form-field>\r\n        <mat-checkbox class=\"example-margin\" formControlName=\"docStatus\">For Doctor Login Please Enable</mat-checkbox>\r\n        <button type=\"submit\" mat-raised-button color=\"primary\" [style.fontSize.px]=\"16\" (click)=\"callLogin(loginForm.value)\">Login</button>\r\n        <button type=\"reset\" mat-raised-button color=\"warn\" [style.fontSize.px]=\"16\" (click)=\"loginForm.reset()\">Cancel</button>\r\n    </form>\r\n</mat-card>\r\n<div style=\"\" class=\"registerButton\">\r\n    <a>\r\n        <button mat-raised-button [routerLink]=\"'/home/register'\" style=\"text-align: center;\">Not a User! Register Here.</button>\r\n    </a>\r\n</div>\r\n\r\n\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<mat-card class=\"mat-elevation-z4\">\r\n    <h1 style=\"text-align: center; padding-bottom: 5vh;\">Login</h1>\r\n    <form [formGroup]=\"loginForm\" [style.fontSize.px]=\"14\">\r\n        <mat-form-field appearance=\"outline\">\r\n            <mat-label>Email</mat-label>\r\n            <input matInput placeholder=\"xyz@abc.com\" formControlName=\"email\">\r\n        </mat-form-field>\r\n        <mat-form-field appearance=\"outline\">\r\n            <mat-label>Password</mat-label>\r\n            <input matInput [type]=\"hide ? 'password' : 'text'\" formControlName=\"password\">\r\n            <button mat-icon-button matSuffix (click)=\"hide = !hide\" [attr.aria-label]=\"'Hide password'\" [attr.aria-pressed]=\"hide\">\r\n            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>\r\n            </button>\r\n        </mat-form-field>\r\n        <mat-checkbox class=\"example-margin\" formControlName=\"docStatus\">For Doctor Login</mat-checkbox>\r\n        <button type=\"submit\" mat-raised-button color=\"primary\" [style.fontSize.px]=\"16\" (click)=\"callLogin(loginForm.value)\">Login</button>\r\n        <button type=\"reset\" mat-raised-button color=\"warn\" [style.fontSize.px]=\"16\" (click)=\"loginForm.reset()\">Cancel</button>\r\n    </form>\r\n</mat-card>\r\n<div style=\"\" class=\"registerButton\">\r\n    <a>\r\n        <button mat-raised-button [routerLink]=\"'/home/register'\" style=\"text-align: center;\">Not a User! Register Here.</button>\r\n    </a>\r\n</div>\r\n\r\n\r\n");
 
 /***/ }),
 
@@ -424,7 +424,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"grid-container\">\r\n    <mat-grid-list cols=\"4\" rowHeight=\"1.5:1\">\r\n\r\n      <mat-grid-tile colspan=\"2\" rowspan=\"2\">\r\n        <mat-card class=\"dashboard-card mat-elevation-z4\">\r\n      \r\n          <mat-card-header>\r\n            <mat-card-title>\r\n              {{pieTitle}}\r\n            </mat-card-title>\r\n          </mat-card-header>\r\n      \r\n          <mat-card-content class=\"dashboard-card-content\">\r\n            <div>\r\n                <app-pie-chart \r\n                    [chartLabels]=\"pieChartLabels\" \r\n                    [chartData]=\"pieChartData\"\r\n                    [chartColors]=\"pieChartColors\"></app-pie-chart>\r\n            </div>\r\n            \r\n          </mat-card-content>\r\n            <div style=\"text-align: center;\">\r\n                <h3 style=\"font-weight: 700; color:rgb(56, 142, 60, .8);\">You have low chances of Covid +ve</h3>\r\n            </div>\r\n        </mat-card>\r\n      </mat-grid-tile>\r\n\r\n        <mat-grid-tile colspan=\"2\" rowspan=\"2\">\r\n            <mat-card class=\"dashboard-card mat-elevation-z4\">\r\n        \r\n            <mat-card-header>\r\n                <mat-card-title>\r\n                {{doughnutTitle}}\r\n                </mat-card-title>\r\n            </mat-card-header>\r\n        \r\n            <mat-card-content class=\"dashboard-card-content\">\r\n                <div>\r\n                    <app-donut-chart \r\n                        [chartLabels]=\"doughnutChartLabels\" \r\n                        [chartData]=\"doughnutChartData\">\r\n                    </app-donut-chart>\r\n                </div>\r\n                \r\n            </mat-card-content>\r\n            <div style=\"text-align: center;\">\r\n              Last Updated on 31 July 2020 13:00 IST\r\n          </div>\r\n            </mat-card>\r\n        </mat-grid-tile>\r\n\r\n        <mat-grid-tile colspan=\"2\" rowspan=\"2\">\r\n            <mat-card class=\"dashboard-card mat-elevation-z4\">\r\n          \r\n              <mat-card-header>\r\n                <mat-card-title>\r\n                  Daily Cases\r\n                </mat-card-title>\r\n              </mat-card-header>\r\n          \r\n              <mat-card-content class=\"dashboard-card-content\">\r\n                <div><app-line-chart></app-line-chart></div>\r\n              </mat-card-content>\r\n            \r\n            </mat-card>\r\n          </mat-grid-tile>\r\n\r\n          <mat-grid-tile colspan=\"2\" rowspan=\"2\">\r\n            <mat-card class=\"dashboard-card mat-elevation-z4\">\r\n        \r\n            <mat-card-header>\r\n                <mat-card-title>\r\n                {{mortalityDoughnutTitle}}\r\n                </mat-card-title>\r\n            </mat-card-header>\r\n        \r\n            <mat-card-content class=\"dashboard-card-content\">\r\n                <div>\r\n                    <app-donut-chart \r\n                        [chartLabels]=\"mortalityDoughnutChartLabels\" \r\n                        [chartData]=\"mortalityDoughnutChartData\">\r\n                    </app-donut-chart>\r\n                </div>\r\n                \r\n            </mat-card-content>\r\n            <div style=\"text-align: center;\">\r\n              NOTE: Result deduced based on patients with similar symptoms\r\n          </div>\r\n            </mat-card>\r\n        </mat-grid-tile>\r\n    </mat-grid-list>\r\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"grid-container\">\r\n    <mat-grid-list cols=\"4\" rowHeight=\"1.5:1\">\r\n\r\n      <mat-grid-tile colspan=\"2\" rowspan=\"2\">\r\n        <mat-card class=\"dashboard-card mat-elevation-z4\">\r\n      \r\n          <mat-card-header>\r\n            <mat-card-title>\r\n              {{pieTitle}}\r\n            </mat-card-title>\r\n          </mat-card-header>\r\n      \r\n          <mat-card-content class=\"dashboard-card-content\">\r\n            <div>\r\n                <app-pie-chart \r\n                    [chartLabels]=\"pieChartLabels\" \r\n                    [chartData]=\"pieChartData\"\r\n                    [chartColors]=\"pieChartColors\"></app-pie-chart>\r\n            </div>\r\n            \r\n          </mat-card-content>\r\n            <div style=\"text-align: center;\">\r\n                <h3 style=\"font-weight: 700; color:rgb(56, 142, 60, .8);\">You have low chances of Covid +ve</h3>\r\n            </div>\r\n        </mat-card>\r\n      </mat-grid-tile>\r\n\r\n        <mat-grid-tile colspan=\"2\" rowspan=\"2\">\r\n            <mat-card class=\"dashboard-card mat-elevation-z4\">\r\n        \r\n            <mat-card-header>\r\n                <mat-card-title>\r\n                {{doughnutTitle}}\r\n                </mat-card-title>\r\n            </mat-card-header>\r\n        \r\n            <mat-card-content class=\"dashboard-card-content\">\r\n                <div>\r\n                    <app-donut-chart \r\n                        [chartLabels]=\"doughnutChartLabels\" \r\n                        [chartData]=\"doughnutChartData\">\r\n                    </app-donut-chart>\r\n                </div>\r\n                \r\n            </mat-card-content>\r\n            <div style=\"text-align: center;\">\r\n              Last Updated on 14 Aug 2020\r\n          </div>\r\n            </mat-card>\r\n        </mat-grid-tile>\r\n\r\n        <mat-grid-tile colspan=\"2\" rowspan=\"2\">\r\n            <mat-card class=\"dashboard-card mat-elevation-z4\">\r\n          \r\n              <mat-card-header>\r\n                <mat-card-title>\r\n                  Daily Cases\r\n                </mat-card-title>\r\n              </mat-card-header>\r\n          \r\n              <mat-card-content class=\"dashboard-card-content\">\r\n                <div><app-line-chart></app-line-chart></div>\r\n              </mat-card-content>\r\n            \r\n            </mat-card>\r\n          </mat-grid-tile>\r\n\r\n          <mat-grid-tile colspan=\"2\" rowspan=\"2\">\r\n            <mat-card class=\"dashboard-card mat-elevation-z4\">\r\n        \r\n            <mat-card-header>\r\n                <mat-card-title>\r\n                {{mortalityDoughnutTitle}}\r\n                </mat-card-title>\r\n            </mat-card-header>\r\n        \r\n            <mat-card-content class=\"dashboard-card-content\">\r\n                <div>\r\n                    <app-donut-chart \r\n                        [chartLabels]=\"mortalityDoughnutChartLabels\" \r\n                        [chartData]=\"mortalityDoughnutChartData\">\r\n                    </app-donut-chart>\r\n                </div>\r\n                \r\n            </mat-card-content>\r\n            <div style=\"text-align: center;\">\r\n              NOTE: Result deduced based on patients with similar symptoms\r\n          </div>\r\n            </mat-card>\r\n        </mat-grid-tile>\r\n    </mat-grid-list>\r\n</div>");
 
 /***/ }),
 
@@ -437,7 +437,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<!-- <nav style=\"padding-top: 2%;\">\r\n  <button mat-button color=\"accent\" [style.fontSize.px]=\"18\">Dashboard</button>\r\n  <button mat-button color=\"primary\">Primary</button>\r\n  <button mat-button color=\"primary\">Primary</button>\r\n</nav> -->\r\n\r\n<mat-tab-group>\r\n  <mat-tab label=\"Dashboard\">\r\n    <ng-template matTabContent>\r\n      <app-patient-dashboard-data></app-patient-dashboard-data>\r\n    </ng-template>\r\n  </mat-tab>\r\n  <mat-tab label=\"Physical and Health Status\">\r\n    <ng-template matTabContent>\r\n      <app-patient-physical-health></app-patient-physical-health>\r\n    </ng-template>\r\n  </mat-tab>\r\n</mat-tab-group>\r\n\r\n<!-- <div class=\"grid-container\">\r\n  \r\n  <mat-grid-list cols=\"3\" rowHeight=\"1:.7\">\r\n    \r\n    <mat-grid-tile colspan=\"1\" rowspan=\"1\">\r\n      <mat-card class=\"dashboard-card\">\r\n    \r\n        <mat-card-header>\r\n          <mat-card-title>\r\n            Bar Graph Example\r\n          </mat-card-title>\r\n        </mat-card-header>\r\n    \r\n        <mat-card-content class=\"dashboard-card-content\">\r\n          <div><app-bar-graph></app-bar-graph></div>\r\n        </mat-card-content>\r\n      \r\n      </mat-card>\r\n    </mat-grid-tile>\r\n    \r\n    <mat-grid-tile colspan=\"2\" rowspan=\"2\">\r\n      <mat-card class=\"dashboard-card\">\r\n    \r\n        <mat-card-header>\r\n          <mat-card-title>\r\n            Doughnut Chart\r\n          </mat-card-title>\r\n        </mat-card-header>\r\n    \r\n        <mat-card-content class=\"dashboard-card-content\">\r\n          <div><app-donut-chart></app-donut-chart></div>\r\n        </mat-card-content>\r\n      \r\n      </mat-card>\r\n    </mat-grid-tile>\r\n\r\n    <mat-grid-tile colspan=\"1\" rowspan=\"1\">\r\n      <mat-card class=\"dashboard-card\">\r\n    \r\n        <mat-card-header>\r\n          <mat-card-title>\r\n            Pie Chart Example\r\n          </mat-card-title>\r\n        </mat-card-header>\r\n    \r\n        <mat-card-content class=\"dashboard-card-content\">\r\n          <div><app-pie-chart></app-pie-chart></div>\r\n        </mat-card-content>\r\n      \r\n      </mat-card>\r\n    </mat-grid-tile>\r\n\r\n    <mat-grid-tile colspan=\"1\" rowspan=\"1\">\r\n      <mat-card class=\"dashboard-card\">\r\n    \r\n        <mat-card-header>\r\n          <mat-card-title>\r\n            Radar Example\r\n          </mat-card-title>\r\n        </mat-card-header>\r\n    \r\n        <mat-card-content class=\"dashboard-card-content\">\r\n          <div><app-radar-chart></app-radar-chart></div>\r\n        </mat-card-content>\r\n      \r\n      </mat-card>\r\n    </mat-grid-tile>\r\n\r\n    <mat-grid-tile colspan=\"2\" rowspan=\"2\">\r\n      <mat-card class=\"dashboard-card\">\r\n    \r\n        <mat-card-header>\r\n          <mat-card-title>\r\n            Line Chart Example\r\n          </mat-card-title>\r\n        </mat-card-header>\r\n    \r\n        <mat-card-content class=\"dashboard-card-content\">\r\n          <div><app-line-chart></app-line-chart></div>\r\n        </mat-card-content>\r\n      \r\n      </mat-card>\r\n    </mat-grid-tile>\r\n\r\n\r\n\r\n  </mat-grid-list>\r\n</div> -->\r\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<!-- <nav style=\"padding-top: 2%;\">\r\n  <button mat-button color=\"accent\" [style.fontSize.px]=\"18\">Dashboard</button>\r\n  <button mat-button color=\"primary\">Primary</button>\r\n  <button mat-button color=\"primary\">Primary</button>\r\n</nav> -->\r\n\r\n<mat-tab-group>\r\n  \r\n  <mat-tab label=\"Physical and Health Status\">\r\n    <ng-template matTabContent>\r\n      <app-patient-physical-health></app-patient-physical-health>\r\n    </ng-template>\r\n  </mat-tab>\r\n  \r\n  <mat-tab label=\"Dashboard\">\r\n    <ng-template matTabContent>\r\n      <app-patient-dashboard-data></app-patient-dashboard-data>\r\n    </ng-template>\r\n  </mat-tab>\r\n  \r\n</mat-tab-group>\r\n\r\n<!-- <div class=\"grid-container\">\r\n  \r\n  <mat-grid-list cols=\"3\" rowHeight=\"1:.7\">\r\n    \r\n    <mat-grid-tile colspan=\"1\" rowspan=\"1\">\r\n      <mat-card class=\"dashboard-card\">\r\n    \r\n        <mat-card-header>\r\n          <mat-card-title>\r\n            Bar Graph Example\r\n          </mat-card-title>\r\n        </mat-card-header>\r\n    \r\n        <mat-card-content class=\"dashboard-card-content\">\r\n          <div><app-bar-graph></app-bar-graph></div>\r\n        </mat-card-content>\r\n      \r\n      </mat-card>\r\n    </mat-grid-tile>\r\n    \r\n    <mat-grid-tile colspan=\"2\" rowspan=\"2\">\r\n      <mat-card class=\"dashboard-card\">\r\n    \r\n        <mat-card-header>\r\n          <mat-card-title>\r\n            Doughnut Chart\r\n          </mat-card-title>\r\n        </mat-card-header>\r\n    \r\n        <mat-card-content class=\"dashboard-card-content\">\r\n          <div><app-donut-chart></app-donut-chart></div>\r\n        </mat-card-content>\r\n      \r\n      </mat-card>\r\n    </mat-grid-tile>\r\n\r\n    <mat-grid-tile colspan=\"1\" rowspan=\"1\">\r\n      <mat-card class=\"dashboard-card\">\r\n    \r\n        <mat-card-header>\r\n          <mat-card-title>\r\n            Pie Chart Example\r\n          </mat-card-title>\r\n        </mat-card-header>\r\n    \r\n        <mat-card-content class=\"dashboard-card-content\">\r\n          <div><app-pie-chart></app-pie-chart></div>\r\n        </mat-card-content>\r\n      \r\n      </mat-card>\r\n    </mat-grid-tile>\r\n\r\n    <mat-grid-tile colspan=\"1\" rowspan=\"1\">\r\n      <mat-card class=\"dashboard-card\">\r\n    \r\n        <mat-card-header>\r\n          <mat-card-title>\r\n            Radar Example\r\n          </mat-card-title>\r\n        </mat-card-header>\r\n    \r\n        <mat-card-content class=\"dashboard-card-content\">\r\n          <div><app-radar-chart></app-radar-chart></div>\r\n        </mat-card-content>\r\n      \r\n      </mat-card>\r\n    </mat-grid-tile>\r\n\r\n    <mat-grid-tile colspan=\"2\" rowspan=\"2\">\r\n      <mat-card class=\"dashboard-card\">\r\n    \r\n        <mat-card-header>\r\n          <mat-card-title>\r\n            Line Chart Example\r\n          </mat-card-title>\r\n        </mat-card-header>\r\n    \r\n        <mat-card-content class=\"dashboard-card-content\">\r\n          <div><app-line-chart></app-line-chart></div>\r\n        </mat-card-content>\r\n      \r\n      </mat-card>\r\n    </mat-grid-tile>\r\n\r\n\r\n\r\n  </mat-grid-list>\r\n</div> -->\r\n");
 
 /***/ }),
 
@@ -489,7 +489,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<mat-card class=\"mat-elevation-z4\">\r\n    <h1 style=\"text-align: center;\">Register</h1>\r\n    <form [formGroup]=\"registerPatientForm\" [style.fontSize.px]=\"12\">\r\n        <table>\r\n            <tr>\r\n                <td>\r\n                    <mat-form-field appearance=\"outline\">\r\n                        <mat-label>First Name</mat-label>\r\n                        <input matInput placeholder=\"First Name\" formControlName=\"firstName\">\r\n                    </mat-form-field>\r\n                </td>\r\n                <td>\r\n                    <mat-form-field appearance=\"outline\">\r\n                        <mat-label>Last Name</mat-label>\r\n                        <input matInput placeholder=\"Last Name\" formControlName=\"lastName\">\r\n                    </mat-form-field>\r\n                </td>\r\n            </tr>\r\n            <tr>\r\n                <td>\r\n                    <mat-form-field appearance=\"outline\">\r\n                        <mat-label>Date Of Birth</mat-label>\r\n                        <input matInput type=\"date\" placeholder=\"\" formControlName=\"dateOfBirth\">\r\n                    </mat-form-field>\r\n                </td>\r\n                <td>\r\n                    <mat-form-field appearance=\"outline\">\r\n                        <mat-label>Mobile No</mat-label>\r\n                        <input matInput placeholder=\"\" formControlName=\"mobileNo\">\r\n                    </mat-form-field>\r\n                </td>\r\n            </tr>\r\n        </table>\r\n\r\n        <mat-form-field appearance=\"outline\">\r\n            <mat-label>Email</mat-label>\r\n            <input matInput placeholder=\"xyz@abc.com\" formControlName=\"email\">\r\n        </mat-form-field>\r\n\r\n        <mat-form-field appearance=\"outline\">\r\n            <mat-label>Password</mat-label>\r\n            <input matInput [type]=\"hide ? 'password' : 'text'\" formControlName=\"password\">\r\n            <button mat-icon-button matSuffix (click)=\"hide = !hide\" [attr.aria-label]=\"'Hide password'\" [attr.aria-pressed]=\"hide\">\r\n            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>\r\n            </button>\r\n        </mat-form-field>\r\n\r\n        <mat-form-field appearance=\"outline\">\r\n            <mat-label>Aadhar No</mat-label>\r\n            <input matInput [type]=\"hide ? 'password' : 'text'\" formControlName=\"aadhar\">\r\n            <button mat-icon-button matSuffix (click)=\"hide = !hide\" [attr.aria-label]=\"'Hide password'\" [attr.aria-pressed]=\"hide\">\r\n            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>\r\n            </button>\r\n        </mat-form-field>\r\n\r\n        <mat-form-field appearance=\"outline\">\r\n            <mat-label>Gender</mat-label>\r\n            <mat-select formControlName=\"gender\">\r\n                <mat-option value=\"Male\">\r\n                    Male\r\n                </mat-option>\r\n                <mat-option value=\"Female\">\r\n                    Female\r\n                </mat-option>\r\n                <mat-option value=\"Others\">\r\n                    Others\r\n                </mat-option>\r\n            </mat-select>\r\n        </mat-form-field>\r\n\r\n        <div formGroupName=\"address\">\r\n            <mat-form-field appearance=\"outline\">\r\n                <mat-label>Address 1</mat-label>\r\n                <textarea matInput placeholder=\"Ex. 100 Main St\" formControlName=\"address1\"></textarea>\r\n            </mat-form-field>\r\n            <mat-form-field appearance=\"outline\">\r\n                <mat-label>Address 2</mat-label>\r\n                <textarea matInput formControlName=\"address2\"></textarea>\r\n            </mat-form-field>\r\n            \r\n            <table>\r\n                <tr>\r\n                    <td>\r\n                        <mat-form-field appearance=\"outline\">\r\n                            <mat-label>City</mat-label>\r\n                            <input matInput placeholder=\"Ex. Mumbai\" formControlName=\"city\">\r\n                        </mat-form-field>\r\n                    </td>\r\n                    <td>\r\n                        <mat-form-field appearance=\"outline\">\r\n                            <mat-label>State</mat-label>\r\n                            <input matInput placeholder=\"Ex. California\" formControlName=\"state\">\r\n                        </mat-form-field>\r\n                    </td>\r\n                </tr>\r\n                <tr>\r\n                    <td>\r\n                        <mat-form-field appearance=\"outline\">\r\n                            <mat-label>Postal Code</mat-label>\r\n                            <input matInput #postalCode maxlength=\"5\" placeholder=\"Ex. 941059\" formControlName=\"pincode\">\r\n                        </mat-form-field>\r\n                    </td>\r\n                </tr>\r\n            </table>\r\n        </div>\r\n\r\n        <button type=\"submit\" mat-raised-button color=\"primary\" [style.fontSize.px]=\"16\" (click)=\"callRegister(registerPatientForm.value)\">Register</button>\r\n        <button type=\"reset\" mat-raised-button color=\"warn\" [style.fontSize.px]=\"16\" (click)=\"registerPatientForm.reset()\">Cancel</button>\r\n    </form>\r\n</mat-card>");
+/* harmony default export */ __webpack_exports__["default"] = ("<mat-card class=\"mat-elevation-z4\">\r\n    <h1 style=\"text-align: center;\">Register Patient Details</h1>\r\n    <form [formGroup]=\"registerPatientForm\" [style.fontSize.px]=\"12\">\r\n        <table>\r\n            <tr>\r\n                <td>\r\n                    <mat-form-field appearance=\"outline\">\r\n                        <mat-label>First Name</mat-label>\r\n                        <input matInput placeholder=\"First Name\" formControlName=\"firstName\">\r\n                    </mat-form-field>\r\n                </td>\r\n                <td>\r\n                    <mat-form-field appearance=\"outline\">\r\n                        <mat-label>Last Name</mat-label>\r\n                        <input matInput placeholder=\"Last Name\" formControlName=\"lastName\">\r\n                    </mat-form-field>\r\n                </td>\r\n            </tr>\r\n            <tr>\r\n                <td>\r\n                    <mat-form-field appearance=\"outline\">\r\n                        <mat-label>Date Of Birth</mat-label>\r\n                        <input matInput type=\"date\" placeholder=\"\" formControlName=\"dateOfBirth\">\r\n                    </mat-form-field>\r\n                </td>\r\n                <td>\r\n                    <mat-form-field appearance=\"outline\">\r\n                        <mat-label>Mobile No</mat-label>\r\n                        <input matInput placeholder=\"\" formControlName=\"mobileNo\">\r\n                    </mat-form-field>\r\n                </td>\r\n            </tr>\r\n        </table>\r\n\r\n        <mat-form-field appearance=\"outline\">\r\n            <mat-label>Email</mat-label>\r\n            <input matInput placeholder=\"xyz@abc.com\" formControlName=\"email\">\r\n        </mat-form-field>\r\n\r\n        <mat-form-field appearance=\"outline\">\r\n            <mat-label>Password</mat-label>\r\n            <input matInput [type]=\"hide ? 'password' : 'text'\" formControlName=\"password\">\r\n            <button mat-icon-button matSuffix (click)=\"hide = !hide\" [attr.aria-label]=\"'Hide password'\" [attr.aria-pressed]=\"hide\">\r\n            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>\r\n            </button>\r\n        </mat-form-field>\r\n\r\n        <mat-form-field appearance=\"outline\">\r\n            <mat-label>Aadhar No</mat-label>\r\n            <input matInput [type]=\"hide ? 'password' : 'text'\" formControlName=\"aadhar\">\r\n            <button mat-icon-button matSuffix (click)=\"hide = !hide\" [attr.aria-label]=\"'Hide password'\" [attr.aria-pressed]=\"hide\">\r\n            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>\r\n            </button>\r\n        </mat-form-field>\r\n\r\n        <mat-form-field appearance=\"outline\">\r\n            <mat-label>Gender</mat-label>\r\n            <mat-select formControlName=\"gender\">\r\n                <mat-option value=\"Male\">\r\n                    Male\r\n                </mat-option>\r\n                <mat-option value=\"Female\">\r\n                    Female\r\n                </mat-option>\r\n                <mat-option value=\"Others\">\r\n                    Others\r\n                </mat-option>\r\n            </mat-select>\r\n        </mat-form-field>\r\n\r\n        <div formGroupName=\"address\">\r\n            <mat-form-field appearance=\"outline\">\r\n                <mat-label>Address 1</mat-label>\r\n                <textarea matInput placeholder=\"Ex. 100 Main St\" formControlName=\"address1\"></textarea>\r\n            </mat-form-field>\r\n            <mat-form-field appearance=\"outline\">\r\n                <mat-label>Address 2</mat-label>\r\n                <textarea matInput formControlName=\"address2\"></textarea>\r\n            </mat-form-field>\r\n            \r\n            <table>\r\n                <tr>\r\n                    <td>\r\n                        <mat-form-field appearance=\"outline\">\r\n                            <mat-label>City</mat-label>\r\n                            <input matInput placeholder=\"Ex. Mumbai\" formControlName=\"city\">\r\n                        </mat-form-field>\r\n                    </td>\r\n                    <td>\r\n                        <mat-form-field appearance=\"outline\">\r\n                            <mat-label>State</mat-label>\r\n                            <input matInput placeholder=\"Ex. California\" formControlName=\"state\">\r\n                        </mat-form-field>\r\n                    </td>\r\n                </tr>\r\n                <tr>\r\n                    <td>\r\n                        <mat-form-field appearance=\"outline\">\r\n                            <mat-label>Postal Code</mat-label>\r\n                            <input matInput #postalCode maxlength=\"5\" placeholder=\"Ex. 941059\" formControlName=\"pincode\">\r\n                        </mat-form-field>\r\n                    </td>\r\n                </tr>\r\n            </table>\r\n        </div>\r\n\r\n        <button type=\"submit\" mat-raised-button color=\"primary\" [style.fontSize.px]=\"16\" (click)=\"callRegister(registerPatientForm.value)\">Register</button>\r\n        <button type=\"reset\" mat-raised-button color=\"warn\" [style.fontSize.px]=\"16\" (click)=\"registerPatientForm.reset()\">Cancel</button>\r\n    </form>\r\n</mat-card>");
 
 /***/ }),
 
@@ -925,7 +925,6 @@ __webpack_require__.r(__webpack_exports__);
 var CommonService = /** @class */ (function () {
     function CommonService(http) {
         this.http = http;
-        this.url = 'http://localhost:8080';
     }
     CommonService.ctorParameters = function () { return [
         { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
@@ -1456,17 +1455,25 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/__ivy_ngcc__/fesm2015/forms.js");
+/* harmony import */ var _common_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../common.service */ "./src/app/common.service.ts");
+
 
 
 
 var PatientPhysicalHealthComponent = /** @class */ (function () {
-    function PatientPhysicalHealthComponent(formBuilder) {
+    function PatientPhysicalHealthComponent(formBuilder, service) {
         var _this = this;
         this.formBuilder = formBuilder;
+        this.service = service;
         this.symptomStatus = false;
         this.isDisabled = false;
         this.medicalInsuranceStatus = false;
         this.agreementStatus = false;
+        // getPatient = () => {
+        //   this.service.getPatient().subscribe((response)=>{
+        //     console.log(response);
+        //   });
+        // }
         this.initTravel = function () {
             return _this.formBuilder.group({
                 travel: [],
@@ -1490,21 +1497,6 @@ var PatientPhysicalHealthComponent = /** @class */ (function () {
             data.doctorDetailDTO = { doctorId: null };
             console.log(data);
         };
-        // onSymptomsChange = (id) => {
-        //   this.symptomsList[id - 1].checked = !this.symptomsList[id - 1].checked;
-        // }
-        // onExistingDiseaseChange = (id) => {
-        //   this.existingDiseaseList[id - 1].checked = !this.existingDiseaseList[id - 1].checked;
-        // }
-        // onExistingDiseaseChangeNone = () => {
-        //   this.isDisabled = !this.isDisabled;
-        // }
-        // onMedicalHistoryChange = (id) => {
-        //   this.medicalHistoryList[id - 1].checked = !this.medicalHistoryList[id - 1].checked;
-        // }
-        // onHabitsChange = (id) => {
-        //   this.habitsList[id - 1].checked = !this.habitsList[id - 1].checked;
-        // }
         this.symptomStatusToggle = function () {
             _this.symptomStatus = !_this.symptomStatus;
         };
@@ -1515,169 +1507,6 @@ var PatientPhysicalHealthComponent = /** @class */ (function () {
             _this.agreementStatus = !_this.agreementStatus;
         };
     }
-    // symptomsList = [
-    //   {
-    //     id: 1,
-    //     symptom: 'Cough',
-    //     checked: false
-    //   },
-    //   {
-    //     id: 2,
-    //     symptom: 'Diarrhoea',
-    //     checked: false
-    //   },
-    //   {
-    //     id: 3,
-    //     symptom: 'Vomitting',
-    //     checked: false
-    //   },
-    //   {
-    //     id: 4,
-    //     symptom: 'Fever',
-    //     checked: false
-    //   },
-    //   {
-    //     id: 5,
-    //     symptom: 'Body Ache',
-    //     checked: false
-    //   },
-    //   {
-    //     id: 6,
-    //     symptom: 'Abdominal Pain',
-    //     checked: false
-    //   },
-    //   {
-    //     id: 7,
-    //     symptom: 'Breathlessness',
-    //     checked: false
-    //   },
-    //   {
-    //     id: 8,
-    //     symptom: 'Nausea',
-    //     checked: false
-    //   },
-    //   {
-    //     id: 9,
-    //     symptom: 'Haemoptysis',
-    //     checked: false
-    //   },
-    //   {
-    //     id: 10,
-    //     symptom: 'Sore Throat',
-    //     checked: false
-    //   },
-    //   {
-    //     id: 11,
-    //     symptom: 'Chest pain',
-    //     checked: false
-    //   },
-    //   {
-    //     id: 12,
-    //     symptom: 'Nasal discharge',
-    //     checked: false
-    //   },
-    //   {
-    //     id: 13,
-    //     symptom: 'Sputum',
-    //     checked: false
-    //   }
-    // ];
-    // existingDiseaseList = [
-    //   {
-    //     id: 1,
-    //     disease: 'Blood Pressure',
-    //     checked: false
-    //   },
-    //   {
-    //     id: 2,
-    //     disease: 'Diabetes',
-    //     checked: false
-    //   },
-    //   {
-    //     id: 3,
-    //     disease: 'Thyroid',
-    //     checked: false
-    //   },
-    //   {
-    //     id: 4,
-    //     disease: 'Asthma',
-    //     checked: false
-    //   },
-    //   {
-    //     id: 5,
-    //     disease: 'Pneumonia',
-    //     checked: false
-    //   },
-    //   {
-    //     id: 6,
-    //     disease: 'Chronic Lung Disease',
-    //     checked: false
-    //   },
-    //   {
-    //     id: 7,
-    //     disease: 'Malignancy',
-    //     checked: false
-    //   },
-    //   {
-    //     id: 8,
-    //     disease: 'Heart Disease',
-    //     checked: false
-    //   },
-    //   {
-    //     id: 9,
-    //     disease: 'Chronic liver disease',
-    //     checked: false
-    //   },
-    //   {
-    //     id: 10,
-    //     disease: 'Hypertension',
-    //     checked: false
-    //   },
-    //   {
-    //     id: 11,
-    //     disease: 'Chronic renal disease',
-    //     checked: false
-    //   },
-    //   {
-    //     id: 12,
-    //     disease: 'Other',
-    //     checked: false
-    //   }
-    // ];
-    // medicalHistoryList = [
-    //   {
-    //     id: 1,
-    //     history: 'Bone Fracture',
-    //     checked: false
-    //   },
-    //   {
-    //     id: 2,
-    //     history: 'Fatal Accident',
-    //     checked: false
-    //   }
-    // ];
-    // habitsList = [
-    //   {
-    //     id: 1,
-    //     habit: 'Eating Junkfood',
-    //     checked: false
-    //   },
-    //   {
-    //     id: 2,
-    //     habit: 'Occasional Drinker',
-    //     checked: false
-    //   },
-    //   {
-    //     id: 3,
-    //     habit: 'Chronic Drinker',
-    //     checked: false
-    //   },
-    //   {
-    //     id: 4,
-    //     habit: 'Smoker',
-    //     checked: false
-    //   },
-    // ];
     PatientPhysicalHealthComponent.prototype.ngOnInit = function () {
         this.physicalAndHealthForm = this.formBuilder.group({
             heightCm: [null],
@@ -1705,9 +1534,11 @@ var PatientPhysicalHealthComponent = /** @class */ (function () {
             medicalInsurance: [],
             doctorDetailDTO: []
         });
+        //this.getPatient();
     };
     PatientPhysicalHealthComponent.ctorParameters = function () { return [
-        { type: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"] }
+        { type: _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"] },
+        { type: _common_service__WEBPACK_IMPORTED_MODULE_3__["CommonService"] }
     ]; };
     PatientPhysicalHealthComponent = Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"])([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -1715,7 +1546,7 @@ var PatientPhysicalHealthComponent = /** @class */ (function () {
             template: Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"])(__webpack_require__(/*! raw-loader!./patient-physical-health.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/patient-physical-health/patient-physical-health.component.html")).default,
             styles: [Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"])(__webpack_require__(/*! ./patient-physical-health.component.scss */ "./src/app/patient-physical-health/patient-physical-health.component.scss")).default]
         }),
-        Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"]])
+        Object(tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"])("design:paramtypes", [_angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormBuilder"], _common_service__WEBPACK_IMPORTED_MODULE_3__["CommonService"]])
     ], PatientPhysicalHealthComponent);
     return PatientPhysicalHealthComponent;
 }());
